@@ -10,6 +10,10 @@ const userSchema = mongoose.Schema({
     type: String,
     minlength: 5
   },
+  role: {
+    type: Number,
+    minlength: 1
+  },
   passwordHash: String,
   bookings: [
     {
